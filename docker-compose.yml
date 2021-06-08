@@ -30,3 +30,11 @@ services:
       - ./janus:/var/www/html
     working_dir: /var/www/html
     tty: true
+  node:
+    build: ./docker/node
+    ports:
+      - "8081:8080"
+    volumes:
+      - ./src:/var/www/html/
+    working_dir: /var/www/html/
+    tty: true
