@@ -35,6 +35,6 @@ services:
     ports:
       - "8081:8080"
     volumes:
-      - ./src:/var/www/html/
+      - ./vue:/var/www/html/
     working_dir: /var/www/html/
     tty: true
